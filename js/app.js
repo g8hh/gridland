@@ -5050,7 +5050,7 @@ define("base64", function (e) {
     paths: {
         app: "../app",
         jquery: ["../jquery.min", "jquery-2.0.3.min"],
-        "google-analytics": ["", "analytics"]
+        "google-analytics": ["", ""]
     },
     waitSeconds: 0
 }), requirejs(["app/main"]), define("app", function () {});
