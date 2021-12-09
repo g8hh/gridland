@@ -2119,7 +2119,7 @@ define("base64", function (e) {
     function s(e) {
         return t[e] || [null, 0]
     }
-    var e = "../",
+    var e = "./",
         t = {
             blacksmith: ["buildings", 0],
             bricklayer: ["buildings", 640],
@@ -4585,7 +4585,7 @@ define("base64", function (e) {
         f = !1,
         l = !1,
         c = !1,
-        h = "../",
+        h = "./",
         p = {
             DayMusic: {
                 file: "theme-day",
