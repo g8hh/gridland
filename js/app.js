@@ -59,9 +59,9 @@ define("app/util", {
         init: function () {
             require(["google-analytics"], function (t) {
                 if (!i) try {
-                    t("create", "UA-41314886-2", "doublespeakgames.com"), t("send", "pageview"), i = !0
+//                    t("create", "UA-41314886-2", "doublespeakgames.com"), t("send", "pageview"), i = !0
                 } catch (n) {
-                    console.log("Failed to initialize Google Analytics: " + n.message)
+//                    console.log("Failed to initialize Google Analytics: " + n.message)
                 }
                 if (i) {
                     var s = require("app/gamestate");
@@ -4797,7 +4797,7 @@ define("base64", function (e) {
             n.make("litBorder", "li").html(e).appendTo(t)
         })), t
     }
-    var e = ['<form method="post" target="_blank" action="https://www.paypal.com/cgi-bin/webscr"><input type="hidden" value="_donations" name="cmd"><input type="hidden" value="continuities@gmail.com" name="business"><input type="hidden" value="Donation to doublespeak games" name="item_name"><input type="hidden" value="0" name="rm"><input type="hidden" value="CAD" name="currency_code"><input onclick="require(\'app/eventmanager\').trigger(\'click\', [\'paypal\']);" type="image" alt=" " title="PayPal" name="submit" class="paypal nightSprite"><input type="image" alt=" " class="paypal"></input></form>', '<a  onclick="require(\'app/eventmanager\').trigger(\'click\', [\'flattr\']);" class="flattr nightSprite" title="Flattr" target="_blank" href="https://flattr.com/thing/1570114/doublespeak-games"></a><input type="image" alt=" " class="flattr"></input>', '<div class="bitcoin"><a onclick="require(\'app/eventmanager\').trigger(\'click\', [\'bitcoin\']);" href="bitcoin:151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN" data-info="none" data-address="151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN" class="bitcoin-button nightSprite" target="_blank"></a><input type="image" alt=" " class="bitcoin-button"></input><div class="bitcoin-bubble"><img width="200" height="200" alt="QR code" src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chld=H|0&amp;chl=bitcoin%3A151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN">151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN</div></div>', '<a onclick="require(\'app/eventmanager\').trigger(\'click\', [\'gittip\']);" class="gittip nightSprite" title="Gittip" target="_blank" href="https://www.gittip.com/Continuities/"></a><input type="image" alt=" " class="gittip"></input>'],
+    var e = ['<form method="post" target="_blank" action="https://www.paypal.com/cgi-bin/webscr"><input type="hidden" value="_donations" name="cmd"><input type="hidden" value="continuities@gmail.com" name="business"><input type="hidden" value="Donation to doublespeak games" name="item_name"><input type="hidden" value="0" name="rm"><input type="hidden" value="CAD" name="currency_code"><input onclick="require(\'app/eventmanager\').trigger(\'click\', [\'paypal\']);" type="image" alt=" " title="PayPal" name="submit" class="paypal nightSprite"><input type="image" alt=" " class="paypal"></input></form>', '<a  onclick="require(\'app/eventmanager\').trigger(\'click\', [\'flattr\']);" class="flattr nightSprite" title="Flattr" target="_blank" href="https://flattr.com/thing/1570114/doublespeak-games"></a><input type="image" alt=" " class="flattr"></input>', '<div class="bitcoin"><a onclick="require(\'app/eventmanager\').trigger(\'click\', [\'bitcoin\']);" href="bitcoin:151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN" data-info="none" data-address="151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN" class="bitcoin-button nightSprite" target="_blank"></a><input type="image" alt=" " class="bitcoin-button"></input><div class="bitcoin-bubble"><img width="200" height="200" alt="QR code" src="">151Ch7PwzMtiVEHMYth5F9REmySvxKJBDN</div></div>', '<a onclick="require(\'app/eventmanager\').trigger(\'click\', [\'gittip\']);" class="gittip nightSprite" title="Gittip" target="_blank" href="https://www.gittip.com/Continuities/"></a><input type="image" alt=" " class="gittip"></input>'],
         t = null;
     return {
         init: function () {
@@ -5050,7 +5050,7 @@ define("base64", function (e) {
     paths: {
         app: "../app",
         jquery: ["../jquery.min", "jquery-2.0.3.min"],
-        "google-analytics": ["https://www.google-analytics.com/analytics", "analytics"]
+        "google-analytics": ["", ""]
     },
     waitSeconds: 0
 }), requirejs(["app/main"]), define("app", function () {});
